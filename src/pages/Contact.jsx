@@ -1,14 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Hardhik from '../img/hardhik_image.jpg'
-import Aditya from '../img/Shekar_img.jpg'
-const Contact = () => {
-  const projectGuide = {
-    name: "Dr. Sarah Johnson",
-    designation: "Project Guide",
-    photo: "/api/placeholder"
-  };
 
+import Sir from '../img/Vasudeva_Sir-removebg-preview.png'
+import Aditya from '../img/Shekar_img.jpg'
+import Darshan from '../img/Darshan.jpg'
+import Gurudatt from '../img/Gurudatt-removebg-preview.png'
+import Hardhik from '../img/Hardhik1-removebg-preview.png'
+const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500">
@@ -27,13 +25,13 @@ const Contact = () => {
           >
             <div className="w-64 h-64 mx-auto mb-4 overflow-hidden shadow-xl">
               <img
-                src={projectGuide.photo}
-                alt={projectGuide.name}
-                className="w-full h-full object-cover"
+                src={Sir}
+                alt={"Mr.Vasudeva Pai"}
+                className="w-full h-full object-contain"
               />
             </div>
-            <h2 className="text-2xl font-semibold text-white">{projectGuide.name}</h2>
-            <p className="text-white opacity-90">{projectGuide.designation}</p>
+            <h2 className="text-2xl font-semibold text-white">{"Mr.Vasudeva Pai"}</h2>
+            <p className="text-white opacity-90">{"Assistant Professor Gd-III"}</p>
           </motion.div>
         </motion.div>
 
@@ -42,10 +40,10 @@ const Contact = () => {
           <h2 className="text-3xl font-bold text-white text-center mb-12">Team Members</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <motion.div
-                key={member.name}
+                key={"Aditya"}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.6, delay:  0.2 }}
                 whileHover={{ 
                   scale: 1.05,
                   transition: { duration: 0.2 }
@@ -56,19 +54,19 @@ const Contact = () => {
                   <img
                     src={Aditya}
                     alt="Aditya"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-                <p className="text-white opacity-90">{member.designation}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{"Aditya C Shekar"}</h3>
+                <p className="text-white opacity-90">{"4NM21IS007"}</p>
               </motion.div>
 
 
               <motion.div
-                key={"dwefvf"}
+                key={"Darshan"}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.6, delay:  0.2 }}
                 whileHover={{ 
                   scale: 1.05,
                   transition: { duration: 0.2 }
@@ -77,20 +75,20 @@ const Contact = () => {
               >
                 <div className="w-40 h-40 mx-auto mb-4 overflow-hidden shadow-lg">
                   <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
+                    src={Darshan}
+                    alt={"Darshan"}
+                    className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-                <p className="text-white opacity-90">{member.designation}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{"Darshan Harish Salian"}</h3>
+                <p className="text-white opacity-90">{"4NM21IS040"}</p>
               </motion.div>
 
               <motion.div
-                key={member.name}
+                key={"Gurudatt"}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
                 whileHover={{ 
                   scale: 1.05,
                   transition: { duration: 0.2 }
@@ -99,21 +97,21 @@ const Contact = () => {
               >
                 <div className="w-40 h-40 mx-auto mb-4 overflow-hidden shadow-lg">
                   <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
+                    src={Gurudatt}
+                    alt={"Gurudatt"}
+                    className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-                <p className="text-white opacity-90">{member.designation}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{"Gurudatt Ashok Mallya"}</h3>
+                <p className="text-white opacity-90">{"4NM21IS048"}</p>
               </motion.div>
 
 
               <motion.div
-                key={member.name}
+                key={"Hardhik"}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
+                transition={{ duration: 0.6, delay:  0.2 }}
                 whileHover={{ 
                   scale: 1.05,
                   transition: { duration: 0.2 }
@@ -122,13 +120,13 @@ const Contact = () => {
               >
                 <div className="w-40 h-40 mx-auto mb-4 overflow-hidden shadow-lg">
                   <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
+                    src={Hardhik}
+                    alt={"Hardhik"}
+                    className="w-full h-full object-contain"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-                <p className="text-white opacity-90">{member.designation}</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{"Hardhik Chinthan P"}</h3>
+                <p className="text-white opacity-90">{"4NM21IS049"}</p>
               </motion.div>
           </div>
         </div>
@@ -137,4 +135,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;

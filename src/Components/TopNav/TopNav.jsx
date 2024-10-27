@@ -30,7 +30,7 @@ const TopNav = () => {
         >
           {[
             { to: "/", text: "Home" },
-            { to: "/features", text: "Features" },
+            { to: "/audio", text: "Audio" },
             { to: "/how-it-works", text: "How it works" },
             { to: "/detect", text: "Detect" },
             { to: "/contact", text: "Contact" }

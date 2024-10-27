@@ -16,7 +16,7 @@ function App() {
       <TopNav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
+        <Route path="/audio" element={<Features />} />
         <Route path="/how-it-works" element={<How_it_Works/>} />
         <Route path="/detect" element={<Detect />} />
        <Route path="/contact" element={<Contact />} /> 

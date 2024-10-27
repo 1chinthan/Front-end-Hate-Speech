@@ -2,15 +2,21 @@ import React from 'react';
 import heroImage from '../img/Hate_Hero.png';
 import { Button } from 'flowbite-react';
 import { motion } from 'framer-motion';
+
 import { ArrowRight, Shield, AlertTriangle, MessageCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   const features = [
     { icon: Shield, text: "Advanced Detection" },
     { icon: AlertTriangle, text: "Real-time Monitoring" },
-    { icon: MessageCircle, text: "Multi-lingual Support" }
+    { icon: MessageCircle, text: "Audio Detection" }
   ];
 
+  const handleStartDetecting = () => {
+    navigate('/detect'); // Navigate to Detect component
+  };
   return (
     <div className='min-h-screen bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 flex justify-center items-center p-6'>
       <motion.div 
@@ -88,7 +94,7 @@ const Home = () => {
                 <Button 
                   className="group relative overflow-hidden rounded-2xl bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 p-1 shadow-xl"
                 >
-                  <div className="relative px-8 py-4 flex items-center gap-3 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 rounded-xl transition-all duration-300 group-hover:bg-transparent">
+                  <div className="relative px-8 py-4 flex items-center gap-3 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 rounded-xl transition-all duration-300 group-hover:bg-transparent" onClick={handleStartDetecting}>
                     <span className='font-bold text-2xl text-white'>Start Detecting</span>
                     <ArrowRight className="w-6 h-6 text-white transition-transform duration-300 group-hover:translate-x-2" />
                   </div>
